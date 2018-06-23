@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nadza.booktastic.SearchFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Search"
+                android:padding="10dp"
+                android:background="@drawable/background"
+                android:textSize="18sp"
+                android:id="@+id/search"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ganres"
+                    android:id="@+id/ganreBtn"
+                    android:background="@drawable/button"
+                    android:layout_weight="1"
+                    android:layout_margin="5sp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Authors"
+                    android:id="@+id/authorsBtn"
+                    android:background="@drawable/button"
+                    android:layout_weight="1"
+                    android:layout_margin="5sp" />
+            </LinearLayout>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list"
+                android:layout_margin="5dp">
+            </ListView>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
